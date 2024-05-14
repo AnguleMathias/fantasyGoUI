@@ -24,3 +24,6 @@ yarn-error.log*
 
 # graphql code-gen
 src/generated
+
+# local env
+.env
