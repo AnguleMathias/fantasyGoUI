@@ -24,7 +24,7 @@
     "build": "yarn tailwind:build && react-scripts build",
     "test": "react-scripts test",
     "generate": "graphql-codegen --config codegen.yml",
-    "start": "set -o allexport; source .env; set +o allexport && yarn generate && react-scripts start",
+    "start": "set -o allexport; source .env; set +o allexport && yarn generate && yarn tailwind:build && react-scripts start",
     "tailwind:dev": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
     "tailwind:build": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css",
     "eject": "react-scripts eject"

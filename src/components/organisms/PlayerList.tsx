@@ -17,13 +17,21 @@ export interface Player {
   selectedPercent: string;
 }
 
-const PlayerList: React.FC<{
+type PlayerListProps = {
   league: string;
   teamFilter: string;
   sortOrder: string;
   shuffle: boolean;
   setTeams: (teams: string[]) => void;
-}> = ({ league, teamFilter, sortOrder, shuffle, setTeams }) => {
+};
+
+const PlayerList: React.FC<PlayerListProps> = ({
+  league,
+  teamFilter,
+  sortOrder,
+  shuffle,
+  setTeams,
+}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
 
