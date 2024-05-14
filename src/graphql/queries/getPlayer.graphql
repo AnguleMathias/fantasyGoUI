@@ -1,0 +1,7 @@
+#import "../templates/playerFields.graphql"
+
+query GetPlayers($league: String!) {
+  getPlayers(league: $league) {
+    ...PlayerFields
+  }
+}

@@ -1,0 +1,10 @@
+fragment PlayerFields on Player {
+  firstName
+  secondName
+  displayName
+  totalPoints
+  team
+  cost
+  selectedPercent
+  position
+}

@@ -1,0 +1,3 @@
+query GetToken($mobileNumber: String!, $password: String!) {
+  getToken(mobileNumber: $mobileNumber, password: $password)
+}
